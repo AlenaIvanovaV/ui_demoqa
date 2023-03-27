@@ -17,18 +17,22 @@ class PracticeForm:
     def fill_name(self):
         browser.element('#firstName').type(self.user.first_name)
         browser.element('#lastName').type(self.user.last_name)
+        return self
 
     def fill_contacts(self):
         browser.element('#userEmail').type(self.user.email)
         browser.element('#userNumber').type(self.user.phone)
+        return self
 
     def select_gender(self):
         gender = Radiobutton(browser.all('[name=gender]'))
         gender.select_by_value(self.user.gender)
+        return self
 
     def select_birthday(self):
         birthday_datepicker = Datepicker(browser.element('#dateOfBirthInput'))
         birthday_datepicker.set_date(self.user.birthday)
+        return self
 
     def input_subject(self):
         browser.element('#subjectsInput').type(self.user.subject).press_enter()
@@ -36,26 +40,31 @@ class PracticeForm:
     def select_hobbies(self):
         check_hobbies = Checkboxes(browser.all('[for^=hobbies-checkbox]'))
         check_hobbies.select(self.user.hobbies)
+        return self
 
     def upload_image(self):
         relative_path = 'resources/photo.png'
         path = path_to_file.create_path(relative_path)
         browser.element('#uploadPicture').set_value(path)
+        return self
 
     def input_address(self):
         browser.element('#currentAddress').type(self.user.address)
+        return self
 
     def select_state(self):
         dropdown = Dropdown('#state')
         dropdown.select(self.user.state)
+        return self
 
     def select_city(self):
         dropdown = Dropdown('#city')
         dropdown.select(self.user.city)
+        return self
 
     def submit(self):
         browser.element('#submit').press_enter()
-
+        return self
     def scroll_to_bottom(self):
         browser.element('#state').perform(command.js.scroll_into_view)
 
