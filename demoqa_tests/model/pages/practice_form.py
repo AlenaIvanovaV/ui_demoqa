@@ -13,7 +13,7 @@ class PracticeForm:
 
     def open_page(self):
         browser.open('/automation-practice-form')
-        ads.remove_ads(amount=5, timeout=8)
+        ads.remove_ads(amount=5, timeout=2)
         return self
 
     def fill_name(self):
