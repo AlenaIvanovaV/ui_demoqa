@@ -30,7 +30,7 @@
 
 ### <img width="3%" title="Jenkins" src="resources/logo/jenkins.png"> Запуск проекта в Jenkins
 
-### [Job](https://jenkins.autotests.cloud/job/kudaev-demo-qa/)
+### [Job](https://jenkins.autotests.cloud/job/avaoleg_qa_guru_ui_demoqa/)
 
 ##### При нажатии на "Собрать сейчас" начнется сборка тестов и их прохождение, через виртуальную машину при помощи Selenoid.
 ![This is an image](resources/screenshots/jenkins.png)
