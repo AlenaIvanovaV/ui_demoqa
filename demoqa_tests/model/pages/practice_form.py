@@ -6,6 +6,7 @@ from demoqa_tests.model.controls.dropdown import Dropdown
 from demoqa_tests.model.controls.radiobutton import Radiobutton
 from demoqa_tests.utils import path_to_file, date_config, ads
 
+
 class PracticeForm:
     def __init__(self, user):
         self.user = user
@@ -66,6 +67,7 @@ class PracticeForm:
     def submit(self):
         browser.element('#submit').press_enter()
         return self
+
     def scroll_to_bottom(self):
         browser.element('#state').perform(command.js.scroll_into_view)
 
@@ -86,7 +88,7 @@ class PracticeForm:
         return self
 
     def should_have_submitted(self):
-        #browser.element('.table').all('td').even.should(have.texts(
+        # browser.element('.table').all('td').even.should(have.texts(
         browser.all('tbody tr td:last-child').should(have.exact_texts(
             self.user.first_name + ' ' + self.user.last_name,
             self.user.email,
