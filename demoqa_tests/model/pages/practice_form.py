@@ -128,5 +128,5 @@ class PracticeForm:
 
     def check_validation_gender(self):
         browser.element('[for^="gender-radio"]') \
-            .should(have.css_property('border-color', value='rgb(40, 167, 69)'))
+            .should(have.css_property('border-color', value='rgb(220, 53, 69)'))
         return self
