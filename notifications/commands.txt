@@ -1,0 +1,21 @@
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1001865309742", "text": "This is a test from qa.guru", "disable_notification": true}' https://api.telegram.org/bot5907133258:AAHs97Zt2U2_-HRTOk4l9gPdhAGBUduLuig/sendMessage
+curl -s -o /dev/null -X POST -H "Content-Type: application/json" -d "{\"chat_id\": \"-1001865309742\", \"text\": \"This is a test from qa.guru\", \"disable_notification\": false}" https://api.telegram.org/bot5907133258:AAHs97Zt2U2_-HRTOk4l9gPdhAGBUduLuig/sendMessage
+
+curl -X POST \
+     -H 'Content-Type: application/json' \
+     -d '{"chat_id": "-1001816319755", "text": "This is a test from qa.guru", "disable_notification": true}' \
+     https://api.telegram.org/bot5942309005:AAGvk-onhTWBzgxu4mEfWb5mS8hVmT3Q-JQ/sendMessage
+
+
+Use this token to access the HTTP API:
+telegram token bot: 5907133258:AAHs97Zt2U2_-HRTOk4l9gPdhAGBUduLuig
+telegram chat id: -1001865309742
+
+
+curl https://api.telegram.org/bot5907133258:AAHs97Zt2U2_-HRTOk4l9gPdhAGBUduLuig/getUpdates | jq .message.chat.id
+https://api.telegram.org/bot5907133258:AAHs97Zt2U2_-HRTOk4l9gPdhAGBUduLuig/getUpdates
+
+
+
+
+java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.2.1.jar
