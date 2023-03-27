@@ -3,8 +3,8 @@
     "logo": "",
     "project": "qa_guru_python_ui_demoqa",
     "environment": "QA.GURU",
-    "comment": "ui_demoqa",
-    "reportLink": "https://jenkins.autotests.cloud/job/qa_guru_python_ui_demoqa/allure",
+    "comment": "homework",
+    "reportLink": "https://jenkins.autotests.cloud/job/avaoleg_qa_guru_ui_demoqa/allure",
     "language": "en",
     "allureFolder": "allure-report/",
     "enableChart": true
