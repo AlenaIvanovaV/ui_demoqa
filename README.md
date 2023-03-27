@@ -38,9 +38,9 @@
 Также мы можем посмотреть выполнение тестов в консоли перейдя во вкладку "Вывод консоли" у определенного билда
 ![This is an image](resources/screenshots/jenkins_console.png)
 
-<!-- Allure report -->
+<!-- Allure report --> 
 
-### <img width="3%" title="Allure Report" src="resources/logo/allure_report.png"> Allure report
+### <img width="3%" title="Allure Report" src="resources/logo/allure_report.png"> [Allure report](https://jenkins.autotests.cloud/job/avaoleg_qa_guru_ui_demoqa/24/allure/)
 
 ##### После прохождения тестов, результаты автоматически сохраняются. Чтобы посмотреть Allure отчет нужно нажать на иконке allure report у сборки.
 ![This is an image](resources/screenshots/allure_dashboard.png)
