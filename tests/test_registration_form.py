@@ -37,8 +37,8 @@ def test_fill_only_required_fields():
         practice_form = PracticeForm(test_user)
 
     with allure.step('Fill main fields'):
-        practice_form.fill_name() \
-            .select_gender() \
+        # practice_form.fill_name() \
+            practice_form.select_gender() \
             .fill_contacts() \
             .input_address() \
             .submit()
