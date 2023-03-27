@@ -63,7 +63,7 @@ def test_fill_only_required_fields():
 @allure.feature("DemoQA Forms")
 @allure.label("owner", "OAO")
 @allure.feature('Check validation empty form')
-def test_submit_empty_form(setup_browser):
+def test_submit_empty_form():
     # GIVEN
     with allure.step('Init Form'):
         practice_form = PracticeForm(test_user)

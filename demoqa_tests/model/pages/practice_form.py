@@ -106,7 +106,7 @@ class PracticeForm:
 
     def check_validation_phone_number(self):
         browser.element('#userNumber') \
-            .should(have.size(9))
+            .should(have.css_property('border-color', value='rgb(40, 167, 69)'))
         return self
 
     def check_validation_email(self):
