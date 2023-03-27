@@ -1,10 +1,10 @@
 {
   "base": {
     "logo": "",
-    "project": "qa_guru_python_ui_demoqa",
+    "project": "diplom project",
     "environment": "QA.GURU",
-    "comment": "homework",
-    "reportLink": "https://jenkins.autotests.cloud/job/avaoleg_qa_guru_ui_demoqa/allure",
+    "comment": "ui tests demoqa",
+    "reportLink": "https://jenkins.autotests.cloud/job/avaoleg_qa_guru_ui_demoqa",
     "language": "en",
     "allureFolder": "allure-report/",
     "enableChart": true
