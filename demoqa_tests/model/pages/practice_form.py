@@ -89,3 +89,7 @@ class PracticeForm:
             self.user.address,
             self.user.state + ' ' + self.user.city))
         return self
+
+    def check_data(self, value):
+        browser.element('.table-responsive').should(have.text(value))
+        return self
