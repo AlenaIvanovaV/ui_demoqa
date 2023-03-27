@@ -12,7 +12,6 @@ import allure
 @allure.label("owner", "OAO")
 @allure.description("Verify registration process is successful")
 def test_registration_user():
-
     # GIVEN
     with allure.step('Init Form'):
         practice_form = PracticeForm(test_user)
@@ -25,6 +24,7 @@ def test_registration_user():
     with allure.step('Verify all sent data correctly submitted'):
         practice_form.should_have_submitted()
 
+
 @allure.tag("UI test")
 @allure.severity(Severity.CRITICAL)
 @allure.story("Registration form")
@@ -36,13 +36,18 @@ def test_fill_only_required_fields():
     with allure.step('Init Form'):
         practice_form = PracticeForm(test_user)
 
+    with allure.step('Open demoqa form'):
+        practice_form.open_page()
+
+    # WHEN
     with allure.step('Fill main fields'):
-        # practice_form.fill_name() \
-            practice_form.select_gender() \
+        practice_form.fill_name() \
+            .select_gender() \
             .fill_contacts() \
             .input_address() \
             .submit()
 
+    # THEN
     with allure.step('Check the filled data'):
         practice_form.check_data(test_user.first_name) \
             .check_data(test_user.last_name) \
