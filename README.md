@@ -54,12 +54,11 @@
 ##### Видео прохождение теста
 ![This is an image](resources/screenshots/tests_ui.gif)
 
-
 <!-- Allure TestOps -->
 
 ### <img width="3%" title="Allure TestOps" src="resources/logo/allure_testops.png"> Интеграция с Allure TestOps
 
-### [Dashboard](https://allure.autotests.cloud/project/2021/dashboards)
+### [Dashboard](https://allure.autotests.cloud/project/2091/dashboards)
 
 ##### Вся отчетность сохраняется в Allure TestOps, где строятся аналогичные графики и тестовые кейсы.
 ![This is an image](resources/screenshots/allure_testops_dashboard.png)
