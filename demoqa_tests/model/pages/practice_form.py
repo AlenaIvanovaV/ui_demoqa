@@ -13,7 +13,7 @@ class PracticeForm:
 
     def open_page(self):
         browser.open('/automation-practice-form')
-        ads.remove_ads(amount=5, timeout=2)
+        ads.remove_ads(amount=5, timeout=5)
         return self
 
     def fill_name(self):
@@ -81,7 +81,7 @@ class PracticeForm:
         self.select_hobbies()
         self.upload_image()
         self.input_address()
-        self.scroll_to_bottom()
+        #self.scroll_to_bottom()
         self.select_state()
         self.select_city()
         self.submit()
