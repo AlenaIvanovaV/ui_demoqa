@@ -13,7 +13,7 @@ class PracticeForm:
 
     def open_page(self):
         browser.open('/automation-practice-form')
-        ads.remove_ads(amount=3, timeout=10)
+        ads.remove_ads(amount=5, timeout=8)
         return self
 
     def fill_name(self):
@@ -118,12 +118,12 @@ class PracticeForm:
 
     def check_validation_first_name(self):
         browser.element('#firstName') \
-            .should(have.css_property('border-color', value='rgb(40, 167, 69)'))
+            .should(have.css_property('border-color', value='rgb(220, 53, 69)'))
         return self
 
     def check_validation_last_name(self):
         browser.element('#lastName') \
-            .should(have.css_property('border-color', value='rgb(40, 167, 69)'))
+            .should(have.css_property('border-color', value='rgb(220, 53, 69)'))
         return self
 
     def check_validation_gender(self):
