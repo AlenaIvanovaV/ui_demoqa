@@ -78,7 +78,7 @@ def test_submit_empty_form():
         practice_form.check_validation_first_name() \
             .check_validation_last_name() \
             .check_validation_gender() \
-            .check_validation_phone_number()
+            .check_validation_phone_number_empty_form()
 
 
 @allure.tag("UI test")
