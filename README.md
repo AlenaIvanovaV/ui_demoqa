@@ -26,6 +26,14 @@
 ![This is an image](resources/screenshots/test_cases.png)
 
 
+
+### Демонстрация тестов для работы с файлами
+![This is an image](images/screenshot/files_test_cases.png)
+Первый тест создает архив из 3 файлов с расширением: pdf, csv, xlsx. 
+Остальные три читают файлы внутри архива и проверяют содержимое файлов:
+![This is an image](images/screenshot/tests-files.png)
+![This is an image](images/screenshot/tests-files-dir.png)
+
 <!-- Jenkins -->
 
 ### <img width="3%" title="Jenkins" src="resources/logo/jenkins.png"> Запуск проекта в Jenkins
